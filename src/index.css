@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Component styles */
+
+
+.btn-primary-menu {
+    @apply py-[7px] px-[15px]  md:py-[8px] md:px-[20px] hidden md:flex justify-center items-center gap-[10px] bg-primary-600 hover:bg-primary-700 text-white font-medium text-[16px] sm:text-[18px] duration-200 active:bg-primary-600 cursor-pointer rounded-full font-raly relative;
+}
+
+.btn-primary-menu::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgb(0, 128, 255);
+    border-radius: 100px;
+    transform: scale(0);
+    z-index: -1;
+    animation: star-menu 1s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.btn-primary {
+    @apply py-[7px] px-[15px]  md:py-[8px] md:px-[20px] flex justify-center items-center gap-[10px] bg-primary-600 hover:bg-primary-700 text-white font-medium text-[16px] sm:text-[18px] duration-200 active:bg-primary-600 cursor-pointer rounded-full font-raly relative;
+}
+
+.btn-primary::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgb(0, 128, 255);
+    border-radius: 100px;
+    transform: scale(0);
+    z-index: 1;
+    animation: star 1s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes star-menu {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: scaleX(1) scaleY(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scaleX(1.1) scaleY(1.25);
+        opacity: 0;
+    }
+}
+
+@keyframes star {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: scaleX(1) scaleY(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scaleX(1.1) scaleY(1.25);
+        opacity: 0;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #a6a6a6bb;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #01b7ffb7;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0086a4;
+  }
