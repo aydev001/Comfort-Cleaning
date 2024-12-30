@@ -29,7 +29,7 @@ const SelectedLang = () => {
     return (
         <button onClick={() => selectedLanguage(lang === "uzb" ? "rus" : "uzb")} className='px-[5px] py-[4px] border-[1px] border-gray-200 cursor-pointer hover:bg-gray-100 active:bg-gray-200 font-semibold rounded-sm md:rounded-md flex justify-center items-center gap-1'>
             <img className='max-w-[18px] max-h-[18px] object-contain' src={lang === "uzb" ? langData[0]?.image : langData[1]?.image} alt="image" />
-            <span className='text-[12px] font-bold'>{lang === "uzb" ? "UZB" : "RUS"}</span>
+            <span className='text-[14px] font-bold'>{lang === "uzb" ? "UZB" : "RUS"}</span>
         </button>
     )
 }

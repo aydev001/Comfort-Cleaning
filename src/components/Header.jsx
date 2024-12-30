@@ -32,7 +32,7 @@ const Header = () => {
                             <BiPhoneCall />
                             <span>{t("contact")}</span>
                         </button>
-                        <button onClick={() => dispatch(toggleDrawer())} className="p-[4px] md:hidden border-[1px] text-[18px] border-gray-200 rounded-sm hover:bg-gray-100 active:bg-gray-200">
+                        <button onClick={() => dispatch(toggleDrawer())} className="p-[5px] md:hidden border-[1px] text-[20px] border-gray-200 rounded-sm hover:bg-gray-100 active:bg-gray-200">
                             <AiOutlineMenu />
                         </button>
                     </nav>

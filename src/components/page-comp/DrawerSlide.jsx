@@ -20,13 +20,13 @@ const DrawerSlide = () => {
       <div className={` bg-white w-[250px] p-[10px] fixed ${drawer ? "right-[5px]" : "right-[-300px]"} duration-300 top-[5px] bottom-[5px] rounded-md shadow-md border-gray-200`}>
         <div className="flex justify-end mb-[10px] gap-[10px]">
           <SelectedLang/>
-          <button onClick={() => dispatch(toggleDrawer())} className="p-[4px] border-[1px] text-[18px] border-gray-200 rounded-sm hover:bg-gray-100 active:bg-gray-200">
+          <button onClick={() => dispatch(toggleDrawer())} className="p-[4px] border-[1px] text-[20px] border-gray-200 rounded-sm hover:bg-gray-100 active:bg-gray-200">
             <CgClose />
           </button>
         </div>
         <hr />
         <div className="mt-[10px]">
-          <ul className='text-[14px] lg:text-[16px] flex justify-end items-center flex-col gap-[8px] md:gap-[15px]'>
+          <ul className='text-[16px] flex justify-end items-center flex-col gap-[8px] md:gap-[15px]'>
             {navData.map(item => (
               <li key={item.id}>
                 <a href="#" className="hover:text-primary-600 duration-150">{t(item.title)}</a>

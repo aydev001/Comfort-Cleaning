@@ -15,7 +15,7 @@ const Home = () => {
                         <h2 className='text-[50px] md:text-[60px] lg:text-[70px] font-bold text-primary-600 leading-[50px] md:leading-[60px] lg:leading-[75px]'>
                             {t("home_main-title")}
                         </h2>
-                        <p className='font-semibold text-gray-600 text-[12px] md:text-[14px] lg:text-[16px]'>
+                        <p className='font-semibold text-gray-600 text-[14px] lg:text-[16px]'>
                             {t("home_desc-title")}
                         </p>
                         <div className='mt-[10px]'>
