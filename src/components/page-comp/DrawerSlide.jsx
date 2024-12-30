@@ -14,7 +14,7 @@ const DrawerSlide = () => {
 
   return (
     <div className="md:hidden">
-      <div className={`${drawer ? "block" : "hidden"} md:hidden fixed top-0 left-0 right-0 bottom-0  backdrop-brightness-50 backdrop-blur-[1px]`}>
+      <div onClick={() => dispatch(toggleDrawer())} className={`${drawer ? "block" : "hidden"} md:hidden fixed top-0 left-0 right-0 bottom-0  backdrop-brightness-50 backdrop-blur-[1px]`}>
 
       </div>
       <div className={` bg-white w-[250px] p-[10px] fixed ${drawer ? "right-[5px]" : "right-[-300px]"} duration-300 top-[5px] bottom-[5px] rounded-md shadow-md border-gray-200`}>
