@@ -20,7 +20,7 @@ const Home = () => {
                         </p>
                         <div className='mt-[10px]'>
                             <button className='btn-primary'>
-                                <BiPhoneCall />
+                                <BiPhoneCall/>
                                 <span>{t("contact")}</span>
                             </button>
                         </div>

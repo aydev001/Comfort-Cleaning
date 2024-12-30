@@ -18,7 +18,7 @@
     left: 0px;
     right: 0;
     bottom: 0;
-    border: 1px solid rgb(0, 128, 255);
+    border: 1px solid rgb(0, 172, 252);
     border-radius: 100px;
     transform: scale(0);
     z-index: -1;
@@ -27,7 +27,7 @@
 }
 
 .btn-primary {
-    @apply py-[7px] px-[15px]  md:py-[8px] md:px-[20px] flex justify-center items-center gap-[10px] bg-primary-600 hover:bg-primary-700 text-white font-medium text-[16px] sm:text-[18px] duration-200 active:bg-primary-600 cursor-pointer rounded-full font-raly relative;
+    @apply py-[7px] px-[15px]  md:py-[8px] md:px-[20px] flex justify-center items-center gap-[10px] bg-primary-600 hover:bg-primary-700 text-white font-medium text-[16px] sm:text-[18px] duration-200 active:bg-primary-600 cursor-pointer rounded-full font-raly relative z-[1];
 }
 
 .btn-primary::after {
@@ -37,17 +37,17 @@
     left: 0px;
     right: 0;
     bottom: 0;
-    border: 1px solid rgb(0, 128, 255);
+    border: 1px solid rgb(0, 172, 252);
     border-radius: 100px;
     transform: scale(0);
-    z-index: 1;
+    z-index: 0;
     animation: star 1s ease-in-out;
     animation-iteration-count: infinite;
 }
 
 @keyframes star-menu {
     0% {
-        transform: scale(0);
+        transform: scaleX(1) scaleY(1);
         opacity: 0;
     }
 
@@ -64,7 +64,7 @@
 
 @keyframes star {
     0% {
-        transform: scale(0);
+        transform: scaleX(1) scaleY(1);
         opacity: 0;
     }
 
@@ -74,7 +74,7 @@
     }
 
     100% {
-        transform: scaleX(1.1) scaleY(1.25);
+        transform: scaleX(1.1) scaleY(1.3);
         opacity: 0;
     }
 }
