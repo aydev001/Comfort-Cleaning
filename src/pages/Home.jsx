@@ -7,7 +7,7 @@ import SwiperImage from '../components/page-comp/SwiperImage'
 const Home = () => {
     const { t } = useTranslation()
     return (
-        <main className='py-[20px] bg-[url("")] bg-no-repeat bg-cover bg-center min-h-[calc(100vh-150px)] max-h-[700px]'>
+        <main className='py-[20px]  bg-no-repeat bg-cover bg-center max-h-[700px]'>
             <Container type={"main"}>
                 <div className='flex justify-between gap-[20px] flex-col md:flex-row'>
                     <div className='flex-[1.3] lg:flex-1 flex flex-col justify-center gap-[10px]'>

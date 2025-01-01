@@ -37,7 +37,7 @@ const SwiperImage = ({type}) => {
             spaceBetween={5}
             slidesPerView={1}
             autoplay={{ delay: 3000 }}
-            speed={1500}
+            speed={1200}
             loop
             className={`rounded-lg shadow-md border-[1px] border-gray-200 overflow-hidden md:h-full`}
         >

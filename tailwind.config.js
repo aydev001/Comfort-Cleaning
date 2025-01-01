@@ -8,7 +8,7 @@ export default {
     extend: {
       fontFamily: {
         "raly": `"Raleway", serif;`,
-        "poppins": `"Poppins", serif`,
+        "inter" : `"Inter", serif;`
       },
       colors: {
         "primary": {

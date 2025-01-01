@@ -13,7 +13,7 @@ const Header = () => {
     const dispatch = useDispatch()
     const {t, i18n} = useTranslation()
     return (
-        <header className="border-b-[1px] border-gray-200 relative shadow-md z-10">
+        <header className="border-b-[1px] border-gray-200 relative shadow-md z-10 bg-white">
             <Container>
                 <div className='flex justify-between items-center gap-[15px] h-[60px]'>
                     <div>
