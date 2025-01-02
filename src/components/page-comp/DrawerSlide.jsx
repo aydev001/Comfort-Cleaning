@@ -17,7 +17,7 @@ const DrawerSlide = () => {
       <div onClick={() => dispatch(toggleDrawer())} className={`${drawer ? "block" : "hidden"} md:hidden fixed top-0 left-0 right-0 bottom-0  backdrop-brightness-50 backdrop-blur-[1px]`}>
 
       </div>
-      <div className={` bg-white w-[250px] p-[10px] fixed ${drawer ? "right-[5px]" : "right-[-300px]"} duration-300 top-[5px] bottom-[5px] rounded-md shadow-md border-gray-200`}>
+      <div className={` bg-white w-[250px] p-[10px] fixed ${drawer ? "right-[5px]" : "right-[-300px]"} duration-500 top-[5px] bottom-[5px] rounded-md shadow-md border-gray-200`}>
         <div className="flex justify-end mb-[10px] gap-[10px]">
           <SelectedLang/>
           <button onClick={() => dispatch(toggleDrawer())} className="p-[4px] border-[1px] text-[20px] border-gray-200 rounded-sm hover:bg-gray-100 active:bg-gray-200">
@@ -29,7 +29,7 @@ const DrawerSlide = () => {
           <ul className='text-[16px] flex justify-end items-center flex-col gap-[8px] md:gap-[15px]'>
             {navData.map(item => (
               <li key={item.id}>
-                <a href="#" className="hover:text-primary-600 duration-150">{t(item.title)}</a>
+                <a href={`#${item.path}`} onClick={() => dispatch(toggleDrawer())} className="hover:text-primary-600 duration-150">{t(item.title)}</a>
               </li>
             ))}
           </ul>

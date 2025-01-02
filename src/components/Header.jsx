@@ -23,7 +23,7 @@ const Header = () => {
                         <ul className='hidden text-[14px] lg:text-[16px] md:flex justify-end items-center gap-[8px] md:gap-[15px]'>
                             {navData.map(item => (
                                 <li key={item.id}>
-                                    <a href="#" className="hover:text-primary-600 duration-150">{t(item.title)}</a>
+                                    <a href={`#${item.path}`} className="hover:text-primary-600 duration-150">{t(item.title)}</a>
                                 </li>
                             ))}
                         </ul>

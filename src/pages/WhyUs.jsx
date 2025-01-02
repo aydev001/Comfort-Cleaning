@@ -10,13 +10,13 @@ import { useTranslation } from "react-i18next";
 const WhyUs = () => {
     const {t} = useTranslation()
     return (
-        <section className="py-[20px]" id="why-us">
+        <section className="py-[20px] mt-[10px]" id="why-us">
             <Container type={"main"}>
                 <div>
                     <AnimateBox>
-                        <h2 className="text-[25px] lg:text-[28px] font-bold text-gray-900">{t("why_main-title")}</h2>
+                        <h2 className="text-[25px] lg:text-[28px] font-bold text-primary-700">{t("why_main-title")}</h2>
                     </AnimateBox>
-                    <hr className="my-[15px]" />
+                    <hr className="mb-[15px]" />
                     <AnimateCards classNames="flex justify-between gap-[15px] flex-col md:flex-row">
                         <div className="p-[10px] h-full hover:shadow-lg bg-white hover:border-gray-300 flex flex-col gap-[10px] border-[1px] border-gray-200 shadow-md rounded-md">
                             <div className="text-[40px]  text-primary-600">

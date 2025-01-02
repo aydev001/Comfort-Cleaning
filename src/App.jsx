@@ -29,7 +29,7 @@ const App = () => {
   return (
     <div className='font-raly font-medium overflow-y-hidden bg-gray-100'>
       <Header />
-      <div data-aos="fade-up" className="min-h-[calc(100vh-62px)] max-h-[calc(100vh-62px)] overflow-y-scroll overflow-x-hidden">
+      <div data-aos="fade-up" className="min-h-[calc(100vh-62px)] max-h-[calc(100vh-62px)] overflow-y-scroll overflow-x-hidden scroll-smooth">
         <Home />
         <WhyUs />
       </div>
