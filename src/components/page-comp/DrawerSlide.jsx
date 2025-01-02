@@ -1,5 +1,5 @@
 import { CgClose } from "react-icons/cg";
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { BiPhoneCall } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleDrawer } from "../../app/features/global/globalSlice";
@@ -10,7 +10,17 @@ import SelectedLang from "./SelectedLang";
 const DrawerSlide = () => {
   const { isDrawerOpen: drawer } = useSelector(state => state.global)
   const dispatch = useDispatch()
-  const {t} = useTranslation()
+  const { t } = useTranslation()
+
+  const [path, setPath] = useState(window.location.hash);
+
+  useEffect(() => {
+    const handlePathChange = () => setPath(window.location.hash);
+    window.addEventListener("popstate", handlePathChange);
+    return () => {
+      window.removeEventListener("popstate", handlePathChange);
+    };
+  }, []);
 
   return (
     <div className="md:hidden">
@@ -19,7 +29,7 @@ const DrawerSlide = () => {
       </div>
       <div className={` bg-white w-[250px] p-[10px] fixed ${drawer ? "right-[5px]" : "right-[-300px]"} duration-500 top-[5px] bottom-[5px] rounded-md shadow-md border-gray-200`}>
         <div className="flex justify-end mb-[10px] gap-[10px]">
-          <SelectedLang/>
+          <SelectedLang />
           <button onClick={() => dispatch(toggleDrawer())} className="p-[4px] border-[1px] text-[20px] border-gray-200 rounded-sm hover:bg-gray-100 active:bg-gray-200">
             <CgClose />
           </button>
@@ -29,7 +39,7 @@ const DrawerSlide = () => {
           <ul className='text-[16px] flex justify-end items-center flex-col gap-[8px] md:gap-[15px]'>
             {navData.map(item => (
               <li key={item.id}>
-                <a href={`#${item.path}`} onClick={() => dispatch(toggleDrawer())} className="hover:text-primary-600 duration-150">{t(item.title)}</a>
+                <a href={`#${item.path}`} onClick={() => dispatch(toggleDrawer())} className={`${path==`#${item.path}`? "text-primary-600 hover:text-primary-700 font-semibold" : "text-gray-800 hover:text-primary-700"} hover:text-primary-600 duration-150`}>{t(item.title)}</a>
               </li>
             ))}
           </ul>

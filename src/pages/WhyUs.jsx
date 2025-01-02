@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 const WhyUs = () => {
     const {t} = useTranslation()
     return (
-        <section className="py-[20px] mt-[10px]" id="why-us">
+        <section className="py-[20px] pt-[10px]" id="why-us">
             <Container type={"main"}>
                 <div>
                     <AnimateBox>
@@ -47,7 +47,7 @@ const WhyUs = () => {
                         </div>
                     </AnimateCards>
                 </div>
-                <div className="mt-[10px] rounded-md overflow-hidden shadow-md bg-cover bg-[url('https://res.cloudinary.com/dss0yvhhr/image/upload/v1735730796/fon-1-a967294a_boaqoo.jpg')]">
+                <div className="mt-[15px] rounded-md overflow-hidden shadow-md bg-cover bg-[url('https://res.cloudinary.com/dss0yvhhr/image/upload/v1735730796/fon-1-a967294a_boaqoo.jpg')]">
                     <AnimateCards variant="top" classNames="w-full sm:w-[75%] p-[20px] md:p-[25px] bg-gradient-to-r from-indigo-700 from-0% text-white lg:w-[60%] flex flex-col gap-[10px] md:gap-[20px] justify-between font-inter">
                         <h2 className=" text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold drop-shadow-lg">
                             {t("why_add-main-title")}

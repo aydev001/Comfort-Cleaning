@@ -8,7 +8,7 @@
     "home_main-title": "Gilam yuvish xizmati",
     "home_excerpt-title": "Professional",
     "home_desc-title": "Toshkentda 10 yillik tajribaga ega professional gilam yuvish xizmati sifatida biz har bir mijozimizning ishonchini oqlashga harakat qilamiz. Gilam yuvish ishlarini yuqori sifatli uskunalar va ekologik toza yuvish vositalari yordamida amalga oshiramiz. Shu sababli, sizning gilamingiz bizning qo‘limizda toza, yorqin va xavfsiz holatga qaytadi.",
-    "why_main-title": "Nima uchun bizni tanlashadi?",
+    "why_main-title": "Nima uchun bizni tanlashadi ?",
     "why_excerpt-title-1": "Tezkor Gilam Yuvish Xizmati",
     "why_excerpt-title-2": "Yetuk Mutaxassislarimiz",
     "why_excerpt-title-3": "Sizga Maqul Va Qulay Vaqtda",
@@ -16,5 +16,11 @@
     "why_desc_title-2": "BIZNING XODIMLARIMIZ HAR BIR JARAYONNI PUXTA AMALGA OSHIRADI: GILAMLARNI QABUL QILISH, YUVISHGA TAYYORLASH, TO‘LIQ TOZALASH, QURITISH VA YAKUNIY NAZORAT.",
     "why_desc_title-3": "SIZ O‘ZINGIZ UCHUN MAQUL VA QULAY VAQTNI TANLANG VA GILAMLARINGIZNI YUVISH UCHUN BIZGA MUROJAAT QILING. SIZGA KAFOLATLANGAN VA SAMARALI NATIJANI TA’MINLAYMIZ.",
     "why_add-main-title": "30 m² va undan katta maydonlar uchun 10% chegirma!",
-    "why_add-desc-title": "Bizning xizmatimizdan foydalanib, 30 m² va undan katta maydonlar uchun 10% chegirma oling! Bugun yuvdirish jarayonini osonlashtiring va toza muhitda hayotingizni yanada qulayroq qiling."
+    "why_add-desc-title": "Bizning xizmatimizdan foydalanib, 30 m² va undan katta maydonlar uchun 10% chegirma oling! Bugun yuvdirish jarayonini osonlashtiring va toza muhitda hayotingizni yanada qulayroq qiling.",
+    "serv_main-title": "Xizmat turlari",
+    "serv_excerpt-title" : "Biz faqat gilam yuvmaymiz",
+    "serv_card-title-1": "Barcha turdagi mebellar",
+    "serv_card-title-2": "Barcha turdagi pardalar",
+    "serv_card-title-3": "Barcha turdagi gilamlar",
+    "serv_card-title-4": "Barcha turdagi adyollar"
 }

@@ -1,6 +1,6 @@
 import { AiOutlineMenu } from "react-icons/ai";
 import { BiPhoneCall } from "react-icons/bi";
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Container from './Container'
 import SelectedLang from './page-comp/SelectedLang'
 import DrawerSlide from "./page-comp/DrawerSlide";
@@ -11,7 +11,19 @@ import { useTranslation } from "react-i18next";
 
 const Header = () => {
     const dispatch = useDispatch()
-    const {t, i18n} = useTranslation()
+    const { t, i18n } = useTranslation()
+
+    const [path, setPath] = useState(window.location.hash);
+
+    useEffect(() => {
+        const handlePathChange = () => setPath(window.location.hash);
+        window.location = `/${path}`
+        window.addEventListener("popstate", handlePathChange);
+        return () => {
+            window.removeEventListener("popstate", handlePathChange);
+        };
+    }, []);
+
     return (
         <header className="border-b-[1px] border-gray-200 relative shadow-md z-10 bg-white">
             <Container>
@@ -23,7 +35,7 @@ const Header = () => {
                         <ul className='hidden text-[14px] lg:text-[16px] md:flex justify-end items-center gap-[8px] md:gap-[15px]'>
                             {navData.map(item => (
                                 <li key={item.id}>
-                                    <a href={`#${item.path}`} className="hover:text-primary-600 duration-150">{t(item.title)}</a>
+                                    <a href={`#${item.path}`} className={`${path==`#${item.path}`? "text-primary-600 hover:text-primary-700 font-semibold" : "text-gray-800 hover:text-primary-700"} duration-150`}>{t(item.title)}</a>
                                 </li>
                             ))}
                         </ul>

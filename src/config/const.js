@@ -25,3 +25,27 @@ export const navData = [
         path : "faq"
     }
 ]
+
+
+export const servicesData = [
+    {
+        id : 1,
+        image : "https://res.cloudinary.com/dss0yvhhr/image/upload/v1735836905/sofa_gdtqr7.jpg",
+        title : "serv_card-title-1"
+    },
+    {
+        id : 2,
+        image : "https://res.cloudinary.com/dss0yvhhr/image/upload/v1735836871/1_188_big_eqo3m2.jpg",
+        title : "serv_card-title-2"
+    },
+    {
+        id : 3,
+        image : "https://res.cloudinary.com/dss0yvhhr/image/upload/v1735493836/Carpet_20Cleaning_zgo9mu.jpg",
+        title : "serv_card-title-3"
+    },
+    {
+        id : 4,
+        image : "https://res.cloudinary.com/dss0yvhhr/image/upload/v1735838339/Blankets-scaled-1_jk7tyx.webp",
+        title : "serv_card-title-4"
+    }
+]
