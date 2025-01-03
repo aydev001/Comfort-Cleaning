@@ -16,12 +16,15 @@ const Header = () => {
     const [path, setPath] = useState(window.location.hash);
 
     useEffect(() => {
-        const handlePathChange = () => setPath(window.location.hash);
-        window.location = `/${path}`
+        const handlePathChange = () => {
+            setPath(window.location.hash)
+        };
         window.addEventListener("popstate", handlePathChange);
+        window.location = path? `/${path}` : `/#main`
         return () => {
             window.removeEventListener("popstate", handlePathChange);
         };
+        
     }, []);
 
     return (
@@ -35,7 +38,7 @@ const Header = () => {
                         <ul className='hidden text-[14px] lg:text-[16px] md:flex justify-end items-center gap-[8px] md:gap-[15px]'>
                             {navData.map(item => (
                                 <li key={item.id}>
-                                    <a href={`#${item.path}`} className={`${path==`#${item.path}`? "text-primary-600 hover:text-primary-700 font-semibold" : "text-gray-800 hover:text-primary-700"} duration-150`}>{t(item.title)}</a>
+                                    <a href={`/#${item.path}`} className={`${path==`#${item.path}`? "text-primary-600 hover:text-primary-700 font-semibold" : "text-gray-800 hover:text-primary-700"} duration-150`}>{t(item.title)}</a>
                                 </li>
                             ))}
                         </ul>

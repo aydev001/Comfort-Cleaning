@@ -28,7 +28,7 @@ const Services = () => {
                         {
                             servicesData.map(item => (
                                 <div key={item.id} className="h-full hover:shadow-lg bg-white p-[10px] flex flex-col border-[1px] border-gray-200 shadow-md rounded-[30px] overflow-hidden group">
-                                    <div className="max-h-[210px] min-h-[210px] rounded-[9%_10%_58%_6%_/_10%_9%_51%_7%] overflow-hidden rounded-t-[25px] shadow-sm border-[1px] border-gray-200">
+                                    <div className="max-h-[210px] min-h-[210px] rounded-[9%_10%_58%_6%_/_10%_9%_51%_7%] overflow-hidden rounded-t-[22px] shadow-sm border-[1px] border-gray-200">
                                         <img className="h-full w-full object-cover duration-[400ms] scale-110 group-hover:scale-100 ease-linear" src={item.image} alt="" />
                                     </div>
                                     <div className="p-[15px] flex justify-center items-center gap-2 flex-col">
