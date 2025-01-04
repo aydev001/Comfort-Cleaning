@@ -1,7 +1,4 @@
-import { GiHandTruck } from "react-icons/gi";
 import { FaTruckMoving } from "react-icons/fa";
-import { HiTruck } from "react-icons/hi";
-import { FaTruck } from "react-icons/fa";
 import { MdDryCleaning } from "react-icons/md";
 import { MdCleanHands } from "react-icons/md";
 import { RiRoadMapFill } from "react-icons/ri";
@@ -132,3 +129,48 @@ export const workProcessData = [
             "lg:col-span-2 lg:col-start-6 lg:row-start-2"
     }
 ];
+
+export const commentsData = [
+    {
+        id : 1,
+        userName : "com_user-name-1",
+        avatar : "https://res.cloudinary.com/dss0yvhhr/image/upload/v1735983742/images_elax7l.jpg",
+        telegram : "nigora_dostonova",
+        comment : "com_user-desc-1"
+    },
+    {
+        id : 2,
+        userName : "com_user-name-2",
+        avatar : "https://res.cloudinary.com/dss0yvhhr/image/upload/v1735984239/5895-2024-10-15-1-_zozhhl.jpg",
+        telegram : "prinsens",
+        comment : "com_user-desc-2"
+    },
+    {
+        id : 3,
+        userName : "com_user-name-3",
+        avatar : "https://res.cloudinary.com/dss0yvhhr/image/upload/v1735984048/JI230816Cosmos220-6d9254f-edited-scaled_qpvxci.webp",
+        telegram : "hayot",
+        comment : "com_user-desc-3"
+    },
+    {
+        id : 4,
+        userName : "com_user-name-4",
+        avatar : "https://res.cloudinary.com/dss0yvhhr/image/upload/v1735983836/7c9d35a1354c11cd3f5c01c0cbac97e7_t92iu7.jpg",
+        telegram : "barno",
+        comment : "com_user-desc-4"
+    },
+    {
+        id : 5,
+        userName : "com_user-name-5",
+        avatar : "https://res.cloudinary.com/dss0yvhhr/image/upload/v1735983994/601b748aba6173ebd52812d506072276_ywbgog.jpg",
+        telegram : "bonu_hamidova",
+        comment : "com_user-desc-5"
+    },
+    {
+        id : 6,
+        userName : "com_user-name-6",
+        avatar : "https://res.cloudinary.com/dss0yvhhr/image/upload/v1735984189/f80ccdb7e2164ba6bbb469625c078d33_pczdkf.jpg",
+        telegram : "samiya_smm",
+        comment : "com_user-desc-6"
+    }
+]

@@ -7,6 +7,7 @@ import 'aos/dist/aos.css';
 import WhyUs from './pages/WhyUs';
 import Services from './pages/Services';
 import WorkProcess from './pages/WorkProcess';
+import Comments from './pages/Comments';
 
 
 const App = () => {
@@ -36,6 +37,7 @@ const App = () => {
         <WhyUs />
         <Services/>
         <WorkProcess/>
+        <Comments/>
       </div>
       {isLoading && <PageLoading />}
     </div>
