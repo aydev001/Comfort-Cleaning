@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Header from './components/Header'
 import Home from './pages/Home'
 import PageLoading from './components/page-comp/PageLoading'
@@ -35,9 +35,9 @@ const App = () => {
       <div data-aos="fade-up" className={`min-h-[calc(100vh-62px)] max-h-[calc(100vh-62px)] overflow-y-scroll overflow-x-hidden scroll-smooth duration-500`}>
         <Home />
         <WhyUs />
-        <Services/>
-        <WorkProcess/>
-        <Comments/>
+        <Services />
+        <WorkProcess />
+        <Comments />
       </div>
       {isLoading && <PageLoading />}
     </div>
