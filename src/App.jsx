@@ -8,6 +8,7 @@ import WhyUs from './pages/WhyUs';
 import Services from './pages/Services';
 import WorkProcess from './pages/WorkProcess';
 import Comments from './pages/Comments';
+import Questions from './pages/Questions';
 
 
 const App = () => {
@@ -38,6 +39,7 @@ const App = () => {
         <Services />
         <WorkProcess />
         <Comments />
+        <Questions/>
       </div>
       {isLoading && <PageLoading />}
     </div>
