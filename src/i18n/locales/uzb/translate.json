@@ -22,5 +22,22 @@
     "serv_card-title-1": "Barcha turdagi mebellar",
     "serv_card-title-2": "Barcha turdagi pardalar",
     "serv_card-title-3": "Barcha turdagi gilamlar",
-    "serv_card-title-4": "Barcha turdagi adyollar"
+    "serv_card-title-4": "Barcha turdagi adyollar",
+    "serv_before-title" : "Oldin",
+    "serv_after-title" : "Keyin",
+    "work_main-title" : "Ish jaroyoni qanday ishlaydi",
+    "work_card-main-title-1" : "Qo'ng'iroq qiling",
+    "work_card-main-title-2" : "Buyurtma",
+    "work_card-main-title-3" : "Shartnoma",
+    "work_card-main-title-4" : "Gilamlarni olib ketish",
+    "work_card-main-title-5" : "Tozalash",
+    "work_card-main-title-6" : "Quritish",
+    "work_card-main-title-7" : "Yetkazib berish",
+    "work_card-desc-title-1" : "Qo'ng'iroq qiling yoki veb-saytda so'rov qoldiring (tafsilotlarni aniqlaymiz va narxini aytamiz)",
+    "work_card-desc-title-2" : "Uyda gilamni yuvish yoki fabrikada yuvib kelish uchun buyurtma bering",
+    "work_card-desc-title-3" : "Biz siz bilan rasmiy shartnoma tuzihs ishni boshlaymiz",
+    "work_card-desc-title-4" : "Gilamlaringizni bepulga olib ketamiz",
+    "work_card-desc-title-5" : "Biz gilamlarni Germaniya uskunalarida tozalaymiz va yuvamiz",
+    "work_card-desc-title-6" : "Gilamlarni deformatsiyasiz va hidsiz quritamiz",
+    "work_card-desc-title-7" : "Sizga qulay vaqtda gilamlaringizni olib kelamiz"
 }

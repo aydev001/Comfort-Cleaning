@@ -6,9 +6,27 @@ import AnimateCards from '../components/page-comp/AnimateCards'
 import Container from '../components/Container'
 import { BiPhoneCall } from "react-icons/bi";
 import { servicesData } from "../config/const";
+import ReactBeforeSliderComponent from 'react-before-after-slider-component';
+import 'react-before-after-slider-component/dist/build.css';
 
 const Services = () => {
     const { t } = useTranslation()
+
+    const FIRST_IMAGE = {
+        imageUrl: 'https://res.cloudinary.com/dss0yvhhr/image/upload/v1735910483/1_jyecwa.jpg'
+    };
+    const SECOND_IMAGE = {
+        imageUrl: 'https://res.cloudinary.com/dss0yvhhr/image/upload/v1735910438/2_kynnau.jpg'
+    };
+
+    const delimiterIconStyles = {
+        width: '30px',
+        height: '30px',
+        backgroundSize: 'contain',
+        borderRadius: 'none',
+        backgroundImage: 'url("https://cdn-icons-png.freepik.com/512/11568/11568116.png")',
+        cursor: "w-resize"
+    }
 
     return (
         <section className="py-[20px] pt-[10px]" id="services">
@@ -46,6 +64,23 @@ const Services = () => {
                             ))
                         }
                     </AnimateCards>
+                    <AnimateBox>
+                        <div className="flex justify-between items-center gap-2">
+                            <div className="text-[18px] font-bold text-gray-800 hidden lg:block">
+                                {t("serv_before-title")}
+                            </div>
+                            <div className="mt-[15px] max-w-[1100px] overflow-hidden rounded-lg shadow-sm border-[1px] border-gray-200">
+                                <ReactBeforeSliderComponent
+                                    firstImage={FIRST_IMAGE}
+                                    secondImage={SECOND_IMAGE}
+                                    delimiterIconStyles={delimiterIconStyles}
+                                />
+                            </div>
+                            <div className="text-[18px] font-bold text-gray-800 hidden lg:block">
+                                {t("serv_after-title")}
+                            </div>
+                        </div>
+                    </AnimateBox>
                 </div>
             </Container>
         </section>
