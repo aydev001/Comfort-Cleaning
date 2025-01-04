@@ -52,7 +52,7 @@ const Comments = () => {
                         }>
 
                         {commentsData.map(item => (
-                            <SwiperSlide key={item.id} className="px-[2px] pt-[5px] pb-[20px]">
+                            <SwiperSlide key={item.id} className="px-[2px] pt-[5px] pb-[25px]">
                                 <div className="p-[15px]  rounded-lg shadow-md border-[1px] border-blue-100 cursor-pointer bg-blue-50 min-h-[200px]">
                                     <div className="flex justify-between items-center gap-1">
                                         <div className="flex justify-start items-center gap-2 mb-[5px]">
