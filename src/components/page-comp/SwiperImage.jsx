@@ -5,11 +5,11 @@ const SwiperImage = ({type}) => {
     const imageUrlDesktop = [
         {
             id: 1,
-            url: "https://res.cloudinary.com/dss0yvhhr/image/upload/v1735496132/image_s_1000x1000_jen9uz.jpg"
+            url: "https://res.cloudinary.com/dss0yvhhr/image/upload/v1735487599/carpet-cleaning-service-stockcake_rcgbia.jpg"
         },
         {
             id: 2,
-            url: "https://res.cloudinary.com/dss0yvhhr/image/upload/v1735487599/carpet-cleaning-service-stockcake_rcgbia.jpg"
+            url: "https://res.cloudinary.com/dss0yvhhr/image/upload/v1735496132/image_s_1000x1000_jen9uz.jpg"
         },
         {
             id: 3,

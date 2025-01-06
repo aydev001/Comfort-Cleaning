@@ -7,9 +7,9 @@ import { store } from './app/store/store.js'
 import "./config/i18next.js"
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  
     <Provider store={store}>
       <App />
     </Provider>
-  </StrictMode>,
+  
 )

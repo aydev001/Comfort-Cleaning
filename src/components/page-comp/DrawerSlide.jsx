@@ -44,10 +44,10 @@ const DrawerSlide = () => {
             ))}
           </ul>
           <div className="flex justify-center mt-[20px]">
-            <button onClick={() => dispatch(toggleModal())} className='btn-primary'>
+            <a href="#contact" onClick={() => dispatch(toggleDrawer())} className='btn-primary'>
               <BiPhoneCall />
               <span>{t("contact")}</span>
-            </button>
+            </a>
           </div>
         </div>
       </div>
