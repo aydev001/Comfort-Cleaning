@@ -23,7 +23,7 @@ const AnimateCards = ({ children, classNames = "", variant="left" }) => {
             variants={containerVariants}
             initial="hidden"
             whileInView="visible" 
-            viewport={{ once: false, amount: 0.2 }} 
+            viewport={{ once: false, amount: 0.1 }} 
             className={classNames}>
             {React.Children.map(children, (child, index) => (
                 <motion.div key={index} variants={childVariants}>

@@ -9,6 +9,8 @@ import Services from './pages/Services';
 import WorkProcess from './pages/WorkProcess';
 import Comments from './pages/Comments';
 import Questions from './pages/Questions';
+import Contact from './pages/Contact';
+import Footer from './pages/Footer';
 
 
 const App = () => {
@@ -40,6 +42,8 @@ const App = () => {
         <WorkProcess />
         <Comments />
         <Questions/>
+        <Contact/>
+        <Footer/>
       </div>
       {isLoading && <PageLoading />}
     </div>

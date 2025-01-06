@@ -5,9 +5,10 @@ import Container from './Container'
 import SelectedLang from './page-comp/SelectedLang'
 import DrawerSlide from "./page-comp/DrawerSlide";
 import { useDispatch } from "react-redux";
-import { toggleDrawer } from "../app/features/global/globalSlice";
+import { toggleDrawer, toggleModal } from "../app/features/global/globalSlice";
 import { navData } from "../config/const";
 import { useTranslation } from "react-i18next";
+import ModalAlert from "./page-comp/ModalAlert";
 
 const Header = () => {
     const dispatch = useDispatch()
@@ -43,7 +44,7 @@ const Header = () => {
                             ))}
                         </ul>
                         <SelectedLang />
-                        <button className='btn-primary-menu'>
+                        <button onClick={() => dispatch(toggleModal())} className='btn-primary-menu'>
                             <BiPhoneCall />
                             <span>{t("contact")}</span>
                         </button>
@@ -54,6 +55,7 @@ const Header = () => {
                 </div>
             </Container>
             <DrawerSlide />
+            <ModalAlert/>
         </header>
     )
 }

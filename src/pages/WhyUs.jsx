@@ -6,9 +6,12 @@ import AnimateBox from "../components/page-comp/AnimateBox";
 import AnimateCards from "../components/page-comp/AnimateCards";
 import { BiPhoneCall } from "react-icons/bi";
 import { useTranslation } from "react-i18next";
+import { useDispatch } from "react-redux";
+import { toggleModal } from "../app/features/global/globalSlice";
 
 const WhyUs = () => {
     const {t} = useTranslation()
+    const dispatch = useDispatch()
     return (
         <section className="py-[20px] pt-[10px]" id="why-us">
             <Container type={"main"}>
@@ -64,7 +67,7 @@ const WhyUs = () => {
                             </li>
                         </ul>
                         <div>
-                            <button className='btn-primary'>
+                            <button onClick={() => dispatch(toggleModal())} className='btn-primary'>
                                 <BiPhoneCall />
                                 <span>{t("contact")}</span>
                             </button>

@@ -3,9 +3,12 @@ import Container from '../components/Container'
 import { useTranslation } from 'react-i18next'
 import { BiPhoneCall } from 'react-icons/bi'
 import SwiperImage from '../components/page-comp/SwiperImage'
+import { useDispatch } from 'react-redux'
+import { toggleModal } from '../app/features/global/globalSlice'
 
 const Home = () => {
     const { t } = useTranslation()
+    const dispatch = useDispatch()
     return (
         <main className='pb-[20px] pt-[25px]  bg-no-repeat bg-cover bg-center max-h-[700px]' id='main'>
             <Container type={"main"}>
@@ -19,7 +22,7 @@ const Home = () => {
                             {t("home_desc-title")}
                         </p>
                         <div data-aos="fade-up" data-aos-delay="500" className='mt-[10px]'>
-                            <button className='btn-primary'>
+                            <button onClick={() => dispatch(toggleModal())} className='btn-primary'>
                                 <BiPhoneCall />
                                 <span>{t("contact")}</span>
                             </button>

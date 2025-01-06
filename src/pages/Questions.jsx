@@ -25,7 +25,7 @@ const Questions = () => {
     };
 
     return (
-        <section className="py-5 mb-7" id="faq">
+        <section className="py-5 mb-3" id="faq">
             <Container type="main">
                 <div>
                     <AnimateBox>
@@ -49,7 +49,7 @@ const Questions = () => {
                                         {/* Savol */}
                                         <button
                                             onClick={() => toggleFAQ(index)}
-                                            className={`w-full text-[16px] text-left p-2 px-3 font-bold text-gray-900 flex justify-between items-center ${activeIndex === index ? "bg-blue-100" : "bg-gray-50"}`}
+                                            className={`w-full text-[16px] text-left p-2 px-3 font-bold text-gray-800 flex justify-between items-center ${activeIndex === index ? "bg-blue-100" : "bg-gray-50"}`}
                                         >
                                             {item.question}
                                             <span className="text-xl">

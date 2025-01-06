@@ -8,10 +8,12 @@ import { BiPhoneCall } from "react-icons/bi";
 import { servicesData } from "../config/const";
 import ReactBeforeSliderComponent from 'react-before-after-slider-component';
 import 'react-before-after-slider-component/dist/build.css';
+import { toggleModal } from "../app/features/global/globalSlice";
+import { useDispatch } from "react-redux";
 
 const Services = () => {
     const { t } = useTranslation()
-
+    const dispatch = useDispatch()
     const FIRST_IMAGE = {
         imageUrl: 'https://res.cloudinary.com/dss0yvhhr/image/upload/v1735910483/1_jyecwa.jpg'
     };
@@ -54,7 +56,7 @@ const Services = () => {
                                             {t(item.title)}
                                         </h3>
                                         <div className="mt-[10px]">
-                                            <button className='btn-primary'>
+                                            <button onClick={() => dispatch(toggleModal())} className='btn-primary'>
                                                 <BiPhoneCall />
                                                 <span>{t("contact")}</span>
                                             </button>

@@ -2,7 +2,7 @@ import { CgClose } from "react-icons/cg";
 import React, { useEffect, useState } from 'react'
 import { BiPhoneCall } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleDrawer } from "../../app/features/global/globalSlice";
+import { toggleDrawer, toggleModal } from "../../app/features/global/globalSlice";
 import { navData } from "../../config/const";
 import { useTranslation } from "react-i18next";
 import SelectedLang from "./SelectedLang";
@@ -24,7 +24,7 @@ const DrawerSlide = () => {
 
   return (
     <div className="md:hidden">
-      <div onClick={() => dispatch(toggleDrawer())} className={`${drawer ? "block" : "hidden"} md:hidden fixed top-0 left-0 right-0 bottom-0  backdrop-brightness-50 backdrop-blur-[1px]`}>
+      <div onClick={() => dispatch(toggleDrawer())} className={`${drawer ? "block" : "hidden"} fixed top-0 left-0 right-0 bottom-0  backdrop-brightness-50 backdrop-blur-[1px]`}>
 
       </div>
       <div className={` bg-white w-[250px] p-[10px] fixed ${drawer ? "right-[5px]" : "right-[-300px]"} duration-500 top-[5px] bottom-[5px] rounded-md shadow-md border-gray-200`}>
@@ -44,7 +44,7 @@ const DrawerSlide = () => {
             ))}
           </ul>
           <div className="flex justify-center mt-[20px]">
-            <button className='btn-primary'>
+            <button onClick={() => dispatch(toggleModal())} className='btn-primary'>
               <BiPhoneCall />
               <span>{t("contact")}</span>
             </button>
