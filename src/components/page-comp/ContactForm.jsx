@@ -50,6 +50,7 @@ const ContactForm = ({ type }) => {
                 timer: 2000
             });
             setSubmitting(false)
+            dispatch(toggleModal())
             resetForm()
         } catch (error) {
             console.error("Xatolik:", error);
